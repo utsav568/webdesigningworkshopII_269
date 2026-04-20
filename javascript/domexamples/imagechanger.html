@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Image Switcher</title>
+</head>
+<body>
+  <!-- Existing image element -->
+  <img id="myImage" src="1 st.jpeg" alt="Switcher" width="300">
+
+  <!-- Button to switch image -->
+  <button onclick="switchImage()">Switch Image</button>
+
+  <script>
+    // Track current state
+    let isImageOne = true;
+
+    function switchImage() {
+      const img = document.getElementById("myImage");
+      if (isImageOne) {
+        img.src = "2nd.jpeg"; // change to second image
+      } else {
+        img.src = "OIF.jpeg"; // change back to first image
+      }
+      isImageOne = !isImageOne; // toggle state
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
