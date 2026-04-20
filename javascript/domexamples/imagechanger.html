@@ -4,11 +4,12 @@
   <title>Image Switcher</title>
 </head>
 <body>
+    <h1 style="text-align: center;">MY IMAGE CHANGER</h1>
   <!-- Existing image element -->
-  <img id="myImage" src="1 st.jpeg" alt="Switcher" width="300">
+  <img id="myImage" src="https://tse1.mm.bing.net/th/id/OIP.zgiDOfpjSb5jqL9bSPKK8QHaD8?pid=Api&P=0&h=180" alt="Switcher" width="300">
 
   <!-- Button to switch image -->
-  <button onclick="switchImage()">Switch Image</button>
+  <button onclick="switchImage()" style="color:magenta ">Switch Image</button>
 
   <script>
     // Track current state
@@ -17,11 +18,11 @@
     function switchImage() {
       const img = document.getElementById("myImage");
       if (isImageOne) {
-        img.src = "2nd.jpeg"; // change to second image
+        img.src = "https://tse3.mm.bing.net/th/id/OIP.1QAB6ZHzi2_sTgcV7upoCwHaDt?pid=Api&P=0&h=180"; 
       } else {
-        img.src = "OIF.jpeg"; // change back to first image
+        img.src = "https://tse2.mm.bing.net/th?id=OIF.BCC%2f%2b2yf%2fyP9Xr1KdZ%2fg8w&pid=Api&P=0&h=180"; 
       }
-      isImageOne = !isImageOne; // toggle state
+      isImageOne = !isImageOne; 
     }
   </script>
 </body>
